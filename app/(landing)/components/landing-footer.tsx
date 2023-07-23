@@ -5,7 +5,7 @@ const LandingFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer footer-center p-10  text-slate-300 rounded mt-40">
+    <footer className="footer footer-center p-10  text-slate-300 rounded">
       <div className="grid grid-flow-col gap-4">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
