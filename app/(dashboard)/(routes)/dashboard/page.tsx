@@ -9,14 +9,13 @@ import { useEffect, useState } from "react";
 
 export default function DashboardPage() {
   const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
   if (!isMounted) return null;
-
-  const router = useRouter();
 
   return (
     <div>
