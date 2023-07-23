@@ -15,7 +15,7 @@ model UserApiLimit {
   userId    String   @unique
   count     Int      @default(0)
   createdAt DateTime @default(now())
-  updae     DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 }
 
 model UserSubscription {
@@ -24,5 +24,5 @@ model UserSubscription {
   stripeCustomerId       String?   @unique @map(name: "stripe_customer_id")
   stripeSubscriptionId   String?   @unique @map(name: "stripe_subscription_id")
   stripePriceId          String?   @map(name: "stripe_price_id")
-  stripeCurrentPeriodEnd DateTime? @map("stripe_current_period_end")
+  stripeCurrentPeriodEnd DateTime? @map(name: "stripe_current_period_end")
 }
