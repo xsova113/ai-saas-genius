@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Youtube } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const LandingFooter = () => {
@@ -7,9 +8,15 @@ const LandingFooter = () => {
   return (
     <footer className="footer footer-center p-10  text-slate-300 rounded">
       <div className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Pricing</a>
+        <Link href={"/about"} className="link link-hover">
+          About us
+        </Link>
+        <Link href={"/contact"} className="link link-hover">
+          Contact
+        </Link>
+        <Link href={"/pricing"} className="link link-hover">
+          Pricing
+        </Link>
       </div>
       <div>
         <div className="grid grid-flow-col gap-4">

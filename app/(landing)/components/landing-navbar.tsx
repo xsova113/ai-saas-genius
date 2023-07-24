@@ -40,14 +40,16 @@ const LandingNavbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="flex gap-x-10">
               {routes.map((route) => (
-                <li
-                  key={route.pathname}
-                  className={cn(
-                    "text-slate-300 font-semibold text-base hover:text-white hover:-translate-y-1 transition",
-                    route.pathname === pathname && "text-white"
-                  )}
-                >
-                  <Link href={route.pathname}>{route.label}</Link>
+                <li key={route.pathname}>
+                  <Link
+                    href={route.pathname}
+                    className={cn(
+                      "text-slate-300 font-semibold text-base hover:text-white hover:bg-slate-800 p-1 px-3 rounded transition",
+                      route.pathname === pathname && "text-white bg-slate-800"
+                    )}
+                  >
+                    {route.label}
+                  </Link>
                 </li>
               ))}
             </ul>

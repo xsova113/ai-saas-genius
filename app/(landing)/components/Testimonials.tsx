@@ -3,23 +3,23 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="px-4 md:px-10 pb-20">
-      <h2 className="text-center text-4xl text-white font-extrabold mb-10">
+    <div className="px-4 md:px-10 md:mx-12 bg-gradient-to-r from-violet-700 via-purple-700 to-sky-600 md:rounded-xl md:my-40 mb-20 md:py-24 py-14 ">
+      <h2 className="text-center text-3xl md:text-4xl text-white font-extrabold mb-10">
         Testimonials
       </h2>
-      <div className="carousel carousel-center text-center max-w-xs p-4 space-x-4 bg-gradient-to-r from-violet-500 via-purple-400 to-sky-600 rounded-box min-w-full">
+      <div className="carousel carousel-center text-center max-w-xs p-4 space-x-4 rounded-box min-w-full">
         {testimonials.map((item, index) => (
           <div
             key={item.description}
             id={`item${index}`}
             className="carousel-item max-md:w-full relative"
           >
-            <Card className="bg-[#192339]/30 border-none text-slate-200 w-full md:w-72">
+            <Card className="bg-white/40 border-none drop-shadow text-slate-200 w-full md:w-72">
               <CardHeader>
                 <CardTitle className="flex items-center gap-x-2 justify-center">
                   <div>
                     <p className="text-xl font-black">{item.name}</p>
-                    <p className="text-slate-800 font-bold text-sm">
+                    <p className="text-slate-600 mt-1 font-bold text-sm">
                       {item.title}
                     </p>
                   </div>

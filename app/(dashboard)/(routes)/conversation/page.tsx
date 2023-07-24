@@ -26,7 +26,6 @@ import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
 import { useDispatch } from "react-redux";
 import { onOpen } from "@/redux/modal/modalSlice";
-import { error } from "console";
 
 const ConversationPage = () => {
   const router = useRouter();
@@ -94,7 +93,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 pl-4 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="How do I know when a girl or guy is into me?"
+                        placeholder="What is the size of the sun?"
                         {...field}
                         autoComplete="off"
                       />
