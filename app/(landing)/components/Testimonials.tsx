@@ -3,7 +3,7 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="px-4 md:px-10 md:mx-12 mt-24 bg-gradient-to-r from-violet-700 via-purple-700 to-sky-600 md:rounded-xl md:my-40 mb-20 md:py-24 py-14 ">
+    <div className="px-4 md:px-10 md:mx-12 mt-24 md:my-40 mb-20">
       <h2 className="text-center text-3xl md:text-4xl text-white font-extrabold mb-10">
         Testimonials
       </h2>
@@ -14,12 +14,12 @@ const Testimonials = () => {
             id={`item${index}`}
             className="carousel-item max-md:w-full relative"
           >
-            <Card className="bg-white/40 border-none drop-shadow text-slate-200 w-full md:w-72">
+            <Card className="bg-slate-800 border-slate-800 drop-shadow text-slate-200 w-full md:w-72">
               <CardHeader>
                 <CardTitle className="flex items-center gap-x-2 justify-center">
                   <div>
                     <p className="text-xl font-black">{item.name}</p>
-                    <p className="text-slate-600 mt-1 font-bold text-sm">
+                    <p className="text-slate-400 mt-1 font-bold text-sm">
                       {item.title}
                     </p>
                   </div>
