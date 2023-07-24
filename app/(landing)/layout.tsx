@@ -8,7 +8,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ParallaxProvider>
-      <main className="min-h-screen bg-slate-900 overflow-auto">
+      <main className="min-h-screen bg-slate-900 overflow-clip">
         <div className="mx-auto max-w-screen-xl h-full w-full">
           <LandingNavbar />
           {children}

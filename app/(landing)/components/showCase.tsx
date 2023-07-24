@@ -14,12 +14,12 @@ const Showcase = () => {
   return (
     <Parallax
       speed={20}
-      className="flex flex-col md:px-14 px-8 bg-gradient-to-r from-violet-300 to-emerald-300 mt-32 items-center"
+      className="flex flex-col md:px-14 px-8 bg-gradient-to-r from-blue-400 to-emerald-500 mt-24 md:mt-32 items-center"
     >
-      <div className="relative gap-4 w-full carousel carousel-center transition-all bottom-32 py-32 rounded-xl">
+      <div className="relative gap-4 w-full carousel carousel-center transition-all md:bottom-32 bottom-8 py-24 md:py-36 rounded-xl">
         {images.map((image) => (
           <Parallax speed={-15} key={image}>
-            <div className="relative w-full h-[600px] carousel-item aspect-square">
+            <div className="relative w-full md:h-[600px] h-[330px] carousel-item aspect-square">
               <Image
                 src={image}
                 alt={"image"}
@@ -32,7 +32,7 @@ const Showcase = () => {
       </div>
       <Link
         href={isSignedIn ? "/dashboard" : "/sign-up"}
-        className="relative bottom-24"
+        className="relative bottom-6 md:bottom-24"
       >
         <Button
           variant={"premium"}

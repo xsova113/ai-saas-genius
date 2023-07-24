@@ -3,7 +3,7 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="px-4 md:px-10 md:mx-12 bg-gradient-to-r from-violet-700 via-purple-700 to-sky-600 md:rounded-xl md:my-40 mb-20 md:py-24 py-14 ">
+    <div className="px-4 md:px-10 md:mx-12 mt-24 bg-gradient-to-r from-violet-700 via-purple-700 to-sky-600 md:rounded-xl md:my-40 mb-20 md:py-24 py-14 ">
       <h2 className="text-center text-3xl md:text-4xl text-white font-extrabold mb-10">
         Testimonials
       </h2>
