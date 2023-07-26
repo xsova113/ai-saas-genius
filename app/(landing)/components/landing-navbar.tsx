@@ -44,7 +44,7 @@ const LandingNavbar = () => {
                   <Link
                     href={route.pathname}
                     className={cn(
-                      "text-slate-300 font-semibold text-base hover:text-white hover:bg-slate-800 p-1 px-3 rounded transition",
+                      "text-slate-300 text-base hover:text-white hover:bg-slate-800 p-1 px-3 rounded transition",
                       route.pathname === pathname && "text-white bg-slate-800"
                     )}
                   >

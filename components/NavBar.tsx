@@ -48,7 +48,7 @@ const Navbar = ({
                 key={route.href}
                 href={route.href}
                 className={cn(
-                  "flex items-center gap-1 text-sm  text-muted-foreground font-semibold hover:text-white hover:bg-slate-800 transition-all btn btn-ghost btm-sm mx-0 px-2 xl:px-4",
+                  "flex items-center gap-1 text-sm text-muted-foreground hover:text-white hover:bg-slate-800 transition-all btn btn-ghost btm-sm mx-0 px-2 xl:px-4",
                   route.href === pathname && "text-white"
                 )}
               >
