@@ -17,9 +17,8 @@ const LandingNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
+    <div>
+      <div className="flex flex-col">
         <nav className="navbar bg-transparent text-white">
           <div className="navbar-start">
             <MobileNavbar />

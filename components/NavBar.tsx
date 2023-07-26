@@ -24,7 +24,9 @@ const Navbar = ({
 
   return (
     <nav className="mb-14 drop-shadow-xl">
-      <div className="navbar bg-slate-900">
+      <div
+        className="navbar bg-slate-900"
+      >
         <div className="navbar-start">
           <MobileSidebar apiLimitCount={apiLimitCount} isPro={isPro} />
           <Link href={"/dashboard"} className="flex items-center max-lg:ml-2">
